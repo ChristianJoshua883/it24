@@ -1,7 +1,7 @@
 //A. Data types
 // Numbers:
 let length = 16;
-let weight = 7.5;
+let weight = 7.5; 
 // Strings:
 let color = "Yellow";
 let lastName = "Tulod";
@@ -31,5 +31,79 @@ console.log("the product is " + prod );
 console.log("the qoutient is " + qou );
 console.log("the modulo is " + mod );
 
+//C. Conditional statements
 
+// if statement
+let today = new Date().getDate();
+ let greetings, greet, impression;
+
+if(today < 15){
+    greetings = "HI goodmorning";
+}
+ console.log(greetings);
+
+//if else statement 
+if (today > 10) {
+    greet = "Hi how are you";
+}
+ else {
+    greet = "Im fine thank you";
+}
+console.log(greet);
+
+// else if statement
+
+if (today > 10) {
+    impresstion = "hello people";
+} else if (today < 9){
+    impression = "mabuhaaaay";
+} else {
+    impression = "miss youuu";
+}
+console.log(impression);
+
+ //switch statement
+
+ let day = 2;
+ let todaysGreeting;
+
+  switch (day){
+    case 1:
+        todaysGreeting = "Hi its Day 1 being a js coder beginner";
+        break;
+    
+    case 2:
+        todaysGreeting = "Hello its Day 2 being a js coder beginner";
+        break;
+    
+    case 3:
+        todaysGreeting = "Goodmorning its Day 3 being a js coder beginner";
+        break; 
+    
+    case 4:
+        todaysGreeting = "Good Afternoon its Day 4 being a js coder beginner";
+        break;
+  } 
+    console.log(todaysGreeting);
+
+    // D. Loops
+
+// While
+    let loop = 0;
+   while(loop < 6){
+    loop++;
+   }
+console.log("The numbers are: " + loop);
+
+// Do While Loop
+let text = ""
+let i = 0;
+
+do {
+  text += "<br>The number is " + i;
+  i++;
+}
+while (i < 10);  
+
+document.getElementById("demo").innerHTML = text;
 
