@@ -34,9 +34,12 @@ class LeafletMap {
 
 const myMap = new LeafletMap('map', [8.360004, 124.868419], 18);
 
+  //  myMap.addMarker(8.360234, 124.867481, "sc building");
+ //   myMap.addMarker(8.359217, 124.867817, "library");
+//    myMap.addMarker(8.360000, 124.868882, "Northern Bukidnon State College Gym");
 
 
 
 
 
-myMap.loadMarkersFromJson('Applet-2.json');
+myMap.loadMarkersFromJson('Applet-1.json');
