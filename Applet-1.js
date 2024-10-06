@@ -8,12 +8,14 @@ class LeafletMap {
         this.initTileLayer();
     }
 
+
     initTileLayer() {
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(this.map);
     }
+   
 
     addMarker(lat, lng, message) {
         const marker = L.marker([lat, lng]).addTo(this.map);
@@ -33,6 +35,7 @@ class LeafletMap {
 }
 
 const myMap = new LeafletMap('map', [8.360004, 124.868419], 18);
+
 
   //  myMap.addMarker(8.360234, 124.867481, "sc building");
  //   myMap.addMarker(8.359217, 124.867817, "library");
