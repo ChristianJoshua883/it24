@@ -62,15 +62,15 @@
 
 
 <body>
-    <div class="applet-container">
-        <h3>Type input event</h3>
-        <h1 id="displayText">Your text will appear here</h1>
-        <input type="text" id="textbox" placeholder="Type something here..." oninput="updateDisplay()">
+    <div class="Btn-log">
+        <h1>Event Button Logger </h1>
+        <h3 id="logCount">Total Logs: </h3>
         <br>
-        <br>
+        <button class="btn btn-primary" id="logButton">Click Me</button>
+        <button class="btn btn-secondary"  id="clearButton">Clear</button>
+        <h2>Collected Data: </h2>
+        <div id="idContainer" style="width: 10rem;"></div>
     
-        <h3>Click Button Event</h3>
-        <button class="btn btn-primary" onclick="showAlert()">Display Alert</button>
     </div>
 
 </body>
