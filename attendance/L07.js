@@ -41,7 +41,13 @@ class LeafletMap {
 
     addMarker(lat, lng, message) {
         const marker = L.marker([lat, lng]).addTo(this.map);
-        marker.bindPopup(message);
+        this.markerCounts[message] = (this.markerCounts[message] || 0) + 1;
+        this.updateMarkerPopup(marker, message);
+        marker.on('click', () => {
+            this.markerCounts[message]++;
+            this.updateMarkerPopup(marker, message);
+        });
+
     }
 
     loadMarkersFromJson(url) {
