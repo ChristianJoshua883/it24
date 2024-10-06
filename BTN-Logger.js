@@ -60,13 +60,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    const button = document.getElementById('my-button' )
-    let cookieCounter = 0
-
-    button.addEventListener("click", increaseCounter)
-
-    function increaseCounter(){
-        cookieCounter++
-        counterDisplay.innerText = cookieCounter
-
-    }
+ 
