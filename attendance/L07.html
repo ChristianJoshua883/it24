@@ -36,8 +36,21 @@
             margin-left: 40%;
             font-family: fantasy;
           }
-  
-  
+          .row{
+           container: auto;
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border: 5cap;
+          }
+          .ly{
+           margin-top: 15px ;
+          }
+          .ly2{
+           margin-top: 15px ;
+          }
+          
   
   
       </style>
@@ -74,9 +87,9 @@
                   Applet
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"></a></li>
-                  <li><a class="dropdown-item" href="#"></a></li>
-                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"> </a></li>
+                  <li><a class="dropdown-item" href="#"> </a></li>
+                  <li><a class="dropdown-item" href="#"> </a></li>
                 </ul>
               </li>
             </ul>
@@ -88,28 +101,35 @@
 
 
 
-<body>
-    
-<div class="hhh"> <h1>Map user location</h1></div>
-    <div id="map"></div>
+  <body>
+
     <div class="container">
-        <div class="btn-container">
-                    <h3>SC Biulding</h3>
-          <h4 id="logCountSC">Attendance Count: </h4>
-          <button class="btn btn-primary" id="SC">LOGIN</button>
-                    <h3>Northern Bukidnon State Collage Library</h3>
-              <h4 id="logCountLibrary">Attendance Count: </h4>
-              <button class="btn btn-primary" id="btn1">LOGIN</button>
-                    <h3>Northern Bukidnon State College Gym</h3>
-                   <h4 id="logCountGym">Attendance Count: </h4>
-                   <button class="btn btn-primary" id="btn2">LOGIN</button>
+      <div class="row">
+        <h2>Leaflet Map</h2>
+        <div id="map"></div>
+        <div class="btn-container"><h3>SC Building</h3>
+          <h4 id="logCount">Attendance Count: </h4>
+          <button class="btn btn-primary" id="btn"> Building</button>
+        
+          <div class="ly">
+              <h3>Northern Bukidnon State Collage Library</h3>
+              <h4 id="logCountlibrary">Attendance Count: </h4>
+              <button class="btn btn-primary" id="btn1">Northern Bukidnon State Collage Library</button>
+      
+            <div class="ly2">
+              <h3>Northern Bukidnon State College Gym</h3>
+                   <h4 id="logCountgym">Attendance Count: </h4>
+                   <button class="btn btn-primary" id="btn2">Northern Bukidnon State College Gym</button>
+                   
                       <div id="logContainer"></div> 
                       <button class="btn btn-primary" id="btnclear">Clear</button>
+                    </div>
+                    </div>          
         </div>
+          
     </div>
 
 </body>
-
 <dev>
     <script src="L07.js"></script>
     
