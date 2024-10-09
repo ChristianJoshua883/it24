@@ -14,14 +14,54 @@
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
+    
+    <title>Document</title>
 
-        <script src="BTN-Logger.js"></script>
+    <style>
+        body {
+          background-color:#e0adcf;
+  
+        } 
+        
+          #map { 
+            height: 450px;
+            margin-top: 40px;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+          }
+  
+          .hhh {
+            margin-top: 20px;
+            margin-left: 40%;
+            font-family: fantasy;
+          }
+          .row{
+           container: auto;
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border: 5cap;
+          }
+          .ly{
+           margin-top: 15px ;
+          }
+          .ly2{
+           margin-top: 15px ;
+          }
+          
+  
+  
+      </style>
 
 
-    <title> BTN-LOGGER </title>
+
+
+
+
+
 </head>
-
-
 
 <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
     <!-- Navbar content -->
@@ -47,9 +87,9 @@
                   Applet
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"></a></li>
-                  <li><a class="dropdown-item" href="#"></a></li>
-                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"> </a></li>
+                  <li><a class="dropdown-item" href="#"> </a></li>
+                  <li><a class="dropdown-item" href="#"> </a></li>
                 </ul>
               </li>
             </ul>
@@ -57,27 +97,41 @@
         </div>
       </nav>
   </nav>
+  <!---------------------------------------------------------------------------->
 
 
 
+  <body>
 
-
-
-<body>
-    <div class="Btn-log">
-        <h1>Event Button Logger </h1>
-        <h3 id="logCount">Total Logs: </h3>
-        <br>
-        <button class="btn btn-primary" id="logButton">Click Me</button>
-        <button class="btn btn-secondary"  id="clearButton">Clear</button>
-        <h2>Collected Data: </h2>
-        <div id="idContainer" style="width: 10rem;"></div>
-    
+    <div class="container">
+      <div class="row">
+        <h2>Leaflet Map</h2>
+        <div id="map"></div>
+        <div class="btn-container"><h3>SC Building</h3>
+          <h4 id="logCount">Attendance Count: </h4>
+          <button class="btn btn-primary" id="btn"> Building</button>
+        
+          <div class="ly">
+              <h3>Northern Bukidnon State Collage Library</h3>
+              <h4 id="logCountlibrary">Attendance Count: </h4>
+              <button class="btn btn-primary" id="btn1">Northern Bukidnon State Collage Library</button>
+      
+            <div class="ly2">
+              <h3>Northern Bukidnon State College Gym</h3>
+                   <h4 id="logCountgym">Attendance Count: </h4>
+                   <button class="btn btn-primary" id="btn2">Northern Bukidnon State College Gym</button>
+                   
+                      <div id="logContainer"></div> 
+                      <button class="btn btn-primary" id="btnclear">Clear</button>
+                    </div>
+                    </div>          
+        </div>
+          
     </div>
 
-
-
-
 </body>
-<script src="BTN-Logger.js" ></script>
+<dev>
+    <script src="L07.js"></script>
+    
+</dev>
 </html>
