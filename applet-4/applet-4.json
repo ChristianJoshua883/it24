@@ -1,0 +1,34 @@
+[
+    {
+        "student_id": 1,
+        "student_name": "Tulod, Christian Joshua",
+        "student_program": "BS-Information Technology"
+    },
+
+    {
+        "student_id": 2,
+        "student_name": "Recaros, Liberato",
+        "student_program": "BS-Financial Management"
+    },
+
+    {
+        "student_id": 3,
+        "student_name": "Recaros, Jhonpole ",
+        "student_program": "BS-Marketing Management"
+    },
+    {
+        "student_id": 4,
+        "student_name": "Idul, Francis Adrian",
+        "student_program": "BS-Information Technology"
+    },
+    {
+        "student_id": 5,
+        "student_name": "Pag-oy, Saliz",
+        "student_program": "BS-Information Technology"
+    },
+    {
+        "student_id": 6,
+        "student_name": "Dandasan, Loyda Guein",
+        "student_program": "BS-Teacher Eduacation Program"
+    }
+]
