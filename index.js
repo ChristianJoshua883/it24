@@ -2,9 +2,11 @@ class CardSearch {
     constructor(searchInputId, cardContainerClass) {
       this.searchInput = document.getElementById(searchInputId);
       this.cardContainer = document.querySelector(`.${cardContainerClass}`);
-      this.cards = this.cardContainer.querySelectorAll('.card');
+      this.cards = this.cardContainer.children;
   
-      this.init();
+      this.searchInput.addEventListener('input', () => {
+        this.filterCards(this.searchInput.value.trim().toLowerCase());
+      });
     }
   
     init() {
