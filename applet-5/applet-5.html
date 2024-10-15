@@ -35,7 +35,7 @@
 </head>
 
 
-<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+
   <!-- Navbar content -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
@@ -82,17 +82,25 @@
 <!--Open Weather-->
 <div class="containerGW">
     <h1>Open Weather</h1>
-    
-    <p id="weatherInfo"></p>
-    <p id="weatherIcon"></p>
+    <!--Textbox-->
     <input type="text" id="cityInput" placeholder="Enter city name" />
-    <button id="getLocationBtn" class="btn btn-secondary">Use My Location</button>
+    <!--btn-->
     <button id="getWeatherBtn" class="btn btn-primary">Get Weather</button>
-    
+    <button id="getLocationBtn" class="btn btn-secondary">Use My Location</button>
+
+    <div id="weatherCard" class="weather-card" style="display: none;">
+        <br>
+        <h2 id="cityName"></h2>
+        <p id="temperature"></p>
+        <p id="description"></p>
+        <p id="humidity"></p>
+        
+    </div>
 </div>
+
                               
     
 </body>
-
+<script src="h.js"></script>
 </html>
             
