@@ -127,6 +127,7 @@ class openweather {
     
     
     }
+    const weatherApp = new WeatherService();
     
     
     
