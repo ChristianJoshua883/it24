@@ -42,7 +42,7 @@ class WeatherApp {
         this.apiKey = this.APIKeyInput.value.trim(); 
 
         if (!this.apiKey) {
-            alert('Please enter your API key.');
+            alert('Please enter your API KEY.');
             return;
         }
 
