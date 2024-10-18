@@ -11,23 +11,91 @@
     <style>
 
         body {
-            background-color: rgb(228, 135, 135);
-            background-image: url(image/background\ 1.jpg);
+            background-color: rgb(121, 114, 226);
             background-size: 100% 100%; 
             background-repeat: no-repeat;
+        }
+            .api-key {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+          }
             
-        }
       
-        .container1{
-          font-family: Arial, Helvetica, sans-serif;
+        .contain {
+          position: relative;
+          padding: 20px;
+          text-align: top;
+          background-color: #C4E1F6;
+          padding: 40px;
+          border: 1px solid #ddd;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           margin-top: 3rem;
-          margin-left: 6rem;
-          margin-right: 2rem;    
-
+          margin: 9rem;
+          margin-bottom: 3rem;
         }
-        
 
-       
+        .container {
+          background-color: #C4E1F6;
+          padding: 20px;
+          border: 1px solid #ddd;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          margin: 3rem auto;
+        }
+
+        #apiInput {
+          width: 100%;
+          height: 40px;
+          padding: 10px;
+          font-size: 16px;
+          border: 1px solid #ccc;
+        }
+
+        #cityInput {
+          width: 100%;
+          height: 40px;
+          padding: 10px;
+          font-size: 16px;
+          border: 1px solid #ccc;
+        }
+
+        #getWeatherBtn, #getLocationBtn {
+          background-color: #007bff;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 35px;
+          margin-left: auto;
+          margin-right:0;
+          right: 3rem;
+          
+        }
+
+        .weather-card {
+          background-color: #fff;
+          padding: 20px;
+          border: 1px solid #ddd;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .weather-card h2 {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+
+        .weather-card p {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+
+          
   
       </style>
   
@@ -80,7 +148,7 @@
 <!----------------------------------------------------------------------------->
 
 <div class="contain">
-  <h3>API key </h3>
+  <h3 class="api-key">API KEY</h3>
   <input type="text" id="apiInput" placeholder="Enter API key" />
 </div>
 <!--Open Weather-->
@@ -88,8 +156,8 @@
     <h1>Open Weather</h1>
 
     <input type="text" id="cityInput" placeholder="Enter city name" />
-        <button id="getWeatherBtn" class="btn btn-primary" style="margin-top: -0.35rem;">Get Weather</button>
-        <button id="getLocationBtn" class="btn btn-secondary"style="margin-top: -0.35rem;">Use My Location</button>
+        <button id="getWeatherBtn" class="btn btn-primary" >Get Weather</button>
+        <button id="getLocationBtn" class="btn btn-secondary">Use My Location</button>
 
 
     <div id="weatherCard" class="weather-card" style="display: none;">
