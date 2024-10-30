@@ -75,7 +75,13 @@ class todoList{
     deleteTask(event) {
             const taskItem = event.target.closest('.todo-item');
                     this.todoList.removeChild(taskItem);
+        }  
+        
+    deleteCompletedTasks() {
+            const completedTasks = Array.from(this.todoList.querySelectorAll('.completed'));
+            completedTasks.forEach(task => this.removeTask({target: task}));
         }    
+    
     //  edit task part 
 
     editTask(event) {
