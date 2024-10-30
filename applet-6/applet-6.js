@@ -38,6 +38,7 @@ class todoList{
                 <button class="btn btn-success btn-sm doneButton">Done</button>
                 <button class="btn btn-warning btn-sm editButton">Edit</button>
                 <button class="btn btn-danger btn-sm removeButton">Remove</button>
+                <button class="btn btn-danger btn-sm deleteButton">Delete</button>
                 
             </div>
         `;
