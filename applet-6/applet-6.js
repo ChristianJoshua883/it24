@@ -50,7 +50,6 @@ class todoList{
         const taskItem = event.target.closest('.todo-item');
         const taskText = taskItem.querySelector('.task-text');
         taskText.classList.toggle('completed'); 
-
         const buttons = taskItem.querySelectorAll('button');
         buttons.forEach(button => button.disabled = true);
 
@@ -58,13 +57,11 @@ class todoList{
 
     // updatetask part para dili mawala
 
-    updateTask() {
-        const taskText = this.todoInput.value.trim();
-        if (taskText) {
+    updateTask(taskText) {
         this.todoList.children[this.editingIndex].querySelector('.task-text').textContent = taskText;
         this.resetEditing();
+
     }
-}
 
     // remocetask part para dili mawala
 
@@ -72,25 +69,15 @@ class todoList{
         this.todoList.removeChild(event.target.closest('.todo-item'));
     }
 
-    // done task part
-
-    doneTask(event) {
-        const taskItem = event.target.closest('.todo-item');
-        const taskText = taskItem.querySelector('.task-text');
-        taskText.classList.toggle('completed');
-        const buttons = taskItem.querySelectorAll('button');
-        buttons.forEach(button => button.disabled = true);
-    }
-
     //  edit task part 
 
-   /* editTask(event) {
+    editTask(event) {
         const taskItem = event.target.closest('.todo-item');
         this.todoInput.value = taskItem.querySelector('.task-text').textContent;
         this.editingIndex = Array.from(this.todoList.children).indexOf(taskItem);
         this.addButton.textContent = 'Update';
     }
-*/
+
     // reset editing part
 
     resetEditing() {
