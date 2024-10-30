@@ -21,7 +21,7 @@ class TodoList{
     addOrUpdateTask() {
         const taskText = this.todoInput.value.trim();
         if (taskText) {
-            this.editingIndex === -1 ? this.addTask(taskText) : this.updateTask(taskText);
+            this.updateTask(taskText);
             this.todoInput.value = '';
         }
     }
@@ -56,10 +56,13 @@ class TodoList{
 
     // updatetask part para dili mawala
 
-    updateTask(taskText) {
+    updateTask() {
+        const taskText = this.todoInput.value.trim();
+        if (taskText) {
         this.todoList.children[this.editingIndex].querySelector('.task-text').textContent = taskText;
         this.resetEditing();
     }
+}
 
     // remocetask part para dili mawala
 
