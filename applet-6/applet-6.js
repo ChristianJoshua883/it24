@@ -16,7 +16,7 @@ class TodoList{
         });
     }
 
-   // add or update rask part
+   // add or update task part
 
     addOrUpdateTask() {
         const taskText = this.todoInput.value.trim();
@@ -26,7 +26,7 @@ class TodoList{
         }
     }
 
-    // add part para dili mawala 
+    // add task part para dili mawala 
 
     addTask(taskText) {
         const listItem = document.createElement('li');
@@ -43,5 +43,17 @@ class TodoList{
         this.todoList.appendChild(listItem);
     }
 
+    // done task part nata 
+
+    doneTask(event) {
+        const taskItem = event.target.closest('.todo-item');
+        const taskText = taskItem.querySelector('.task-text');
+        taskText.classList.toggle('completed'); 
+
+        const buttons = taskItem.querySelectorAll('button');
+        buttons.forEach(button => button.disabled = true);
+    }
+
     
+
 }
