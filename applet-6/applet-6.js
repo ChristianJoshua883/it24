@@ -21,7 +21,7 @@ class todoList{
     addOrUpdateTask() {
         const taskText = this.todoInput.value.trim();
         if (taskText) {
-            this.updateTask(taskText);
+            this.editingIndex === -1 ? this.addTask(taskText) : this.updateTask(taskText);
             this.todoInput.value = '';
         }
     }
@@ -41,6 +41,7 @@ class todoList{
             </div>
         `;
         this.todoList.appendChild(listItem);
+
     }
 
     // done task part nata 
@@ -52,6 +53,7 @@ class todoList{
 
         const buttons = taskItem.querySelectorAll('button');
         buttons.forEach(button => button.disabled = true);
+
     }
 
     // updatetask part para dili mawala
