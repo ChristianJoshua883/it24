@@ -11,7 +11,8 @@ class todoList{
         this.todoList.addEventListener('click', (e) => {
             const action = e.target.classList.contains('removeButton') ? 'remove' : 
                            e.target.classList.contains('editButton') ? 'edit' : 
-                           e.target.classList.contains('doneButton') ? 'done' : null;
+                           e.target.classList.contains('doneButton') ? 'done' : 
+                           e.target.classList.contains('deleteButton') ? 'delete' : null;
             if (action) this[action + 'Task'](e);
         });
     }
@@ -38,6 +39,7 @@ class todoList{
                 <button class="btn btn-success btn-sm doneButton">Done</button>
                 <button class="btn btn-warning btn-sm editButton">Edit</button>
                 <button class="btn btn-danger btn-sm removeButton">Remove</button>
+
             </div>
         `;
         this.todoList.appendChild(listItem);
@@ -69,6 +71,12 @@ class todoList{
         this.todoList.removeChild(event.target.closest('.todo-item'));
     }
 
+    // delete task part
+    deleteTask(event) {
+            if (confirm('Are you sure you want to delete this task?')) {
+                this.removeTask(event);
+            }
+        }    
     //  edit task part 
 
     editTask(event) {
