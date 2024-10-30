@@ -14,6 +14,7 @@ class todoList{
                            e.target.classList.contains('doneButton') ? 'done' : null;
             if (action) this[action + 'Task'](e);
         });
+        document.getElementById('deleteCompletedTasks').addEventListener('click', () => this.deleteCompletedTasks());
     }
 
    // add or update task part
@@ -53,7 +54,8 @@ class todoList{
         const taskText = taskItem.querySelector('.task-text');
         taskText.classList.toggle('completed'); 
         const buttons = taskItem.querySelectorAll('button');
-        buttons.forEach(button => button.disabled = true);
+        buttons.forEach(button =>
+             button.disabled = true);
 
     }
 
