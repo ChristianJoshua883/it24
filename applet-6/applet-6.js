@@ -38,7 +38,7 @@ class todoList{
             <div style="margin-top: 0.5rem;">
                 <button class="btn btn-success btn-sm doneButton">Done</button>
                 <button class="btn btn-warning btn-sm editButton">Edit</button>
-                <button class="btn btn-danger btn-sm removeButton">Remove</button>
+                
                 
                 
             </div>
@@ -55,9 +55,10 @@ class todoList{
         taskText.classList.toggle('completed'); 
         const buttons = taskItem.querySelectorAll('button');
         buttons.forEach(button =>
-             button.disabled = true);
+            button.disabled = true);
 
-    }
+   }
+
 
     // updatetask part para dili mawala
 
@@ -69,9 +70,13 @@ class todoList{
 
     // remocetask part para dili mawala
 
+
     removeTask(event) {
+        // Locate the closest parent with class 'todo-item' and remove it from the list
         this.todoList.removeChild(event.target.closest('.todo-item'));
     }
+
+    
 
     // delete task part
     deleteTask(event) {
