@@ -1,6 +1,6 @@
 // just in case lang magamit pohon guides lang
 
-class TodoList{
+class todoList{
     constructor() {
         this.editingIndex = -1;
         this.addButton = document.getElementById('addButton');
@@ -82,13 +82,13 @@ class TodoList{
 
     //  edit task part 
 
-    editTask(event) {
+   /* editTask(event) {
         const taskItem = event.target.closest('.todo-item');
         this.todoInput.value = taskItem.querySelector('.task-text').textContent;
         this.editingIndex = Array.from(this.todoList.children).indexOf(taskItem);
         this.addButton.textContent = 'Update';
     }
-
+*/
     // reset editing part
 
     resetEditing() {
