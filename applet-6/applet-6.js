@@ -61,5 +61,11 @@ class TodoList{
         this.resetEditing();
     }
 
-    
+    // remocetask part para dili mawala
+
+    removeTask(event) {
+        this.todoList.removeChild(event.target.closest('.todo-item'));
+    }
+
+
 }
